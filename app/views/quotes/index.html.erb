@@ -1,11 +1,10 @@
+<div class="links">
+  <%= link_to "New Quote", new_quote_path %>
+</div>
+
 <% @quotes.each do |quote| %>
   <div class="index_row clearfix">
     <h2 class="quote_blurb">"<%= link_to quote.blurb, quote %>"</h2>
     <p class="quote_author">- <%= quote.author %></p>
   </div>
 <% end %>
-
-
-<div class="links">
-  <%= link_to "New Quote", new_quote_path %>
-</div>
