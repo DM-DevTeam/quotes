@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h2 class="quote_blurb"><%= @quote.blurb %></h2>
+<p class="quote_author"><%= @quote.author %></p>
+
+<div class="links">
+	<%= link_to 'Edit', edit_quote_path(@quote) %> |
+	<%= link_to 'Delete', quote_path(@quote), method: :delete, data: { confirm: "Are you sure?" }
+ %> |
+  <%= link_to 'Back', quotes_path %>
+</div>
